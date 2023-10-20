@@ -6,6 +6,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        Console.WriteLine("Hello, World!");
+        // Ekrana girilen sayıya kadar olan tek sayıları yazdır.
+        Console.Write("Lütfen bir sayı giriniz: ");
+        int sayi = int.Parse(Console.ReadLine());
+        for (int i = 1; i <= sayi; i++)
+        {
+            if(i % 2 == 1)
+                Console.WriteLine(i);
+        }
     }
 }
